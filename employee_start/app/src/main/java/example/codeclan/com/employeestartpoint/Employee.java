@@ -17,11 +17,9 @@ public class Employee {
         this.salary = salary;
     }
 
-
     public void setName(String name) {
         this.name = name;
     }
-
 
     public void raiseSalary(Double raise){
     this.salary += raise;
@@ -42,4 +40,5 @@ public class Employee {
     public double getSalary() {
         return salary;
     }
+
 }
