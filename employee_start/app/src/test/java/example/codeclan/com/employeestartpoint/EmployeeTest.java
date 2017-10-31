@@ -38,7 +38,7 @@ public class EmployeeTest {
         employee.setName("Betty");
         assertEquals("Betty", employee.getName());
     }
-    @Test 
+    @Test
     public void canRaiseSalary() {
         employee.raiseSalary(1.00);
         assertEquals(30001.00, employee.getSalary(), 0.01);
