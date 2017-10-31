@@ -19,6 +19,7 @@ public class EmployeeTest {
 
     @Test
     public void canGetEmployeeName() {
+
         assertEquals("Wilma", employee.getName());
     }
 
@@ -26,11 +27,21 @@ public class EmployeeTest {
     public void canGetEmployeeSSn() {
         assertEquals("AB123456C", employee.getSocialSecurityNumber());
     }
-    
+
+    @Test
+    public void canGetSalary() {
+        assertEquals(30000.00, employee.getSalary(),0.01);
+    }
+
     @Test
     public void canSetEmployeeName() {
         employee.setName("Betty");
         assertEquals("Betty", employee.getName());
+    }
+    @Test 
+    public void canRaiseSalary() {
+        employee.raiseSalary(1.00);
+        assertEquals(30001.00, employee.getSalary(), 0.01);
     }
 
 }

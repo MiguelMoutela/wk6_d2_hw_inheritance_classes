@@ -23,5 +23,23 @@ public class Employee {
     }
 
 
+    public void raiseSalary(Double raise){
+    this.salary += raise;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSocialSecurityNumber() {
+        return socialSecurityNumber;
+    }
+
+    public double getSalary() {
+        return salary;
     }
 }
